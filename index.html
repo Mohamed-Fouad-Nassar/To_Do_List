@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>To_Do List</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="./dist/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="./dist/css/normalize.css" /> -->
+    <link rel="stylesheet" href="./dist/css/master.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">todo</div>
+        <div class="controls">
+          <section class="theme">
+            <i class="f-icon fa-solid fa-circle-half-stroke" id="themeBtn"></i>
+          </section>
+          <section class="search">
+            <i class="f-icon fa-solid fa-magnifying-glass" id="sreachBtn"></i>
+            <input class="" type="text" name="search" id="search" />
+          </section>
+          <!-- <section class="menu"></section> -->
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="add-item">
+          <form method="post" id="form">
+            <span>Please enter a value</span>
+            <input type="text" id="item" name="item" placeholder="add item" />
+            <button id="submitBtn">
+              <i class="f-icon fa-solid fa-circle-plus"></i>
+            </button>
+          </form>
+        </section>
+        <section class="remove-items">
+          <div class="container">
+            <button id="allItemsBtn">remove all Items</button>
+            <button id="runningItemsBtn">remove running Items</button>
+            <button id="completedItemsBtn">remove completed Items</button>
+          </div>
+        </section>
+        <section class="running-items">
+          <div class="head-sec">
+            <h2>running items</h2>
+            <span id="runningCounter"></span>
+          </div>
+          <div class="body-sec" id="runningItems">
+            <!-- <article class="item">
+              <div class="left-sec">
+                <span></span>
+              </div>
+              <div class="right-sec">
+                <h3>item label</h3>
+                <span>item modify date</span>
+              </div>
+            </article> -->
+          </div>
+        </section>
+        <section class="completed-items">
+          <div class="head-sec">
+            <h2>completed items</h2>
+            <span id="completedCounter"></span>
+          </div>
+          <div class="body-sec" id="completedElements">
+            <!-- <article class="item">
+              <div class="left-sec">
+                <span>
+                  <i class="f-icon fa-solid fa-check"></i>
+                </span>
+              </div>
+              <div class="right-sec">
+                <h3>item label</h3>
+                <span>item modify date</span>
+              </div>
+            </article> -->
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>created by <span>mohammed f. nassar</span> with love 🤍</p>
+      </div>
+    </footer>
+    <!-- js files -->
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>
