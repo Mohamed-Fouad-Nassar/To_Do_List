@@ -24,13 +24,27 @@
             <i class="f-icon fa-solid fa-circle-half-stroke" id="themeBtn"></i>
           </section>
           <section class="search">
-            <i class="f-icon fa-solid fa-magnifying-glass" id="sreachBtn"></i>
-            <input class="" type="text" name="search" id="search" />
+            <form method="post" id="searchForm">
+              <i class="f-icon fa-solid fa-magnifying-glass" id="searchBtn"></i>
+              <input class="" type="text" name="search" id="search" />
+              <input type="submit" />
+            </form>
           </section>
-          <!-- <section class="menu"></section> -->
+          <section class="menu" id="searchMenu">
+            <span id="errorSpan">no items founded</span>
+            <div class="running">
+              <h4>running</h4>
+              <section id="searchRunningElements"></section>
+            </div>
+            <div class="completed">
+              <h4>completed</h4>
+              <section id="searchCompletedElements"></section>
+            </div>
+          </section>
         </div>
       </div>
     </header>
+    <div class="overlay"></div>
     <main>
       <div class="container">
         <section class="add-item">
